@@ -13,3 +13,10 @@ server.pid
 *.eml
 /dist/
 .cache
+.idea/
+.sbtserver/
+RUNNING_PID
+app-2.11/
+conf/application.conf
+project/
+test-2.11/
