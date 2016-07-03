@@ -1,0 +1,22 @@
+## Secret key
+# http://www.playframework.com/documentation/latest/ApplicationSecret
+# ~~~~~
+# The secret key is used to sign Play's session cookie.
+# This must be changed for production, but we don't recommend you change it in this file.
+play.crypto.secret = "changeme"
+
+play.i18n {
+  langs = [ "en" ]
+}
+
+play.server.netty {
+  # If you run Play on Linux, you can use Netty's native socket transport
+  # for higher performance with less garbage.
+  #transport = "native"
+}
+
+aesKey = "eqfg6y24uo5yfvsdgfhkgvevygof13fd"
+
+play.modules {
+    enabled += Module
+}
