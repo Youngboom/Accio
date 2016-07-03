@@ -1,0 +1,16 @@
+<configuration>
+  <appender name="REQUEST_LOG_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${user.dir}/logs/request.log</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${user.dir}/logs/request.log.%d{yyyy-MM-dd}</fileNamePattern>
+      <maxHistory>7</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%message%n</pattern>
+    </encoder>
+  </appender>
+
+  <logger name="request" level="TRACE" additivity="false">
+    <appender-ref ref="REQUEST_LOG_FILE" />
+  </logger>
+</configuration>
