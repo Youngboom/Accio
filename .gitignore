@@ -18,5 +18,7 @@ server.pid
 RUNNING_PID
 app-2.11/
 conf/application.conf
-project/
+project/.sbtserver
+project/.sbtserver.lock
+project/build.properties
 test-2.11/
